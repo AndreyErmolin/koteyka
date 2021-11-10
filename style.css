@@ -1,0 +1,616 @@
+.page {
+    max-width: 1920px;
+    overflow-x: hidden;
+}
+
+.visually-hidden {
+    visibility: hidden;
+    display: none;
+}
+
+.main-header {
+    margin-bottom: 20px;
+}
+.main-nav {
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.site-navigation {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 40px;
+}
+
+.site-navigation-link {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.site-navigation-link:hover {
+    font-weight: bold;
+}
+
+.main {
+    
+}
+
+.promo {
+    max-width: 1366px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    height: 504px;
+    margin-bottom: 100px;
+}
+
+
+.promo-two {
+    order: -1;
+    margin: 0;
+    font-size: 16px;
+}
+.promo-one {
+    order: 1;
+    font-size: 70px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.promo-three {
+    order: 2;
+    margin: 0;
+    font-size: 22px;
+}
+
+.promo-four {
+    order: 3;
+    padding: 15px;
+    color: black;
+    text-decoration: none;
+    margin: 0;
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: white;
+    border-radius: 30px;
+    width: 150px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.promo-title {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -370px;
+    left: 200px;
+}
+
+.features {
+    max-width: 1366px;
+    margin: auto;
+}
+
+.features-title {
+    display: block;
+    width: max-content;
+    margin: auto;
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.features-decore {
+    position: absolute;
+    top: 630px;
+    right: -90px;
+    z-index: -1;
+}
+
+.features-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style-type: none;
+    gap: 20px;
+    justify-content: space-evenly;
+    margin-left: 120px;
+    margin-right: 120px;
+    padding: 0;
+}
+
+.features-list-item {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 300px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    background-color: white;
+}
+
+.features-list-item:hover {
+    box-shadow: 0 0 2px rgba(0,0,0,0.3);
+}
+
+.features-picture {
+    width: 100px;
+    height: 100px;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.features-list-item-title {
+    font-weight: bold;
+    font-size: 22px;
+    margin: 0;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.features-list-item-subtitle {
+    margin: 0;
+    margin-left: 30px;
+    font-size: 16px;
+}
+
+.room-reservation {
+    display: flex;
+    flex-direction: column;
+    max-width: 1126px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.room-revervation-block {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.room-reservation-title {
+    display: block;
+    width: max-content;
+    margin: auto;
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.room-reservation-description {
+    display: flex;
+    flex-direction: column;
+}
+
+.room-reservation-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.room-reservation-decotarion {
+    width: 400px;
+    position: absolute;
+    top: 1500px;
+    left: 150px;
+}
+
+.room-revervation-image {
+    order: -1;
+    margin: 30px;
+    margin-bottom: 0;
+    height: 340px;
+}
+
+.room-reservation-description-title {
+    margin-left: 30px;
+}
+
+.description-list {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    margin-left: 30px;
+}
+
+.description-list-item {
+    margin-bottom: 10px;
+}
+
+.room-reservation-form-title {
+    display: block;
+    width: max-content;
+    margin: 30px auto 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#reservation-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.reservation-form-item {
+    width: 400px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+}
+
+.reservation-form-item-block {
+    width: 100px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+}
+
+.reservation-submit {
+    width: 220px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: #ff6633;
+    color: white;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.button-image {
+    width: 35px;
+    margin: auto;
+}
+
+.button-text {
+    color: white;
+    margin: auto;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+    max-width: 1126px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.reviews-decoration {
+    width: 300px;
+    position: absolute;
+    right: -50px;
+    margin-top: -80px;
+}
+
+.reviews-title {
+    display: block;
+    width: max-content;
+    margin: auto;
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.reviews-list {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 35px;
+}
+
+.reviews-list-item {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.reviews-list-item:hover {
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.main-footer {
+    display: flex;
+    flex-direction: column;
+    max-width: 1366px;
+    margin: auto;
+    margin-top: 150px;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #ffcc66;
+}
+
+.contacts-block {
+    display: flex;
+    flex-direction: column;
+    margin-left: 170px;
+    margin-top: 30px;
+}
+
+.contacts-list-title {
+    font-weight: bold;
+    font-size: 40px;
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.contacts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contacts-list-definition {
+    margin: 0;
+}
+
+.contacts-list-term {
+    margin: 0;
+    font-weight: bold;
+}
+.social-list {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 15px;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1366px;
+}
+
+.footer-nav-one {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    width: 1366px;
+    
+}
+
+.footer-site-navigation {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 25px;
+    margin-right: 100px;
+}
+
+.footer-site-navigation-item {
+
+}
+
+.footer-site-navigation-link {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.footer-logo {
+    margin-left: 150px;
+}
+
+.footer-nav-two {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 100px;
+
+}
+
+.politic {
+    margin-top: 18px;
+    color: rgb(103, 103, 103);
+    text-decoration: none;
+}
+
+.katalog__container {
+    display: flex;
+    flex-direction: row;
+    max-width: 1124px;
+    margin: auto;
+}
+
+.filters {
+    width: 280px;
+    margin-top: 35px;
+}
+
+.filters__title {
+    font-size: 42px;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+
+.form__item {
+    border: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.legend-title {
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.form__container-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.form__input {
+    width: 80px;
+    border: 1px solid rgba(0, 0, 0, 0.20);
+    margin-right: 10px;
+    margin-top: 5px;
+    padding: 4px;
+}
+
+.form__container-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-block {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-area-one {
+    order: -5;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+
+.catalog {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+}
+
+.catalog-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+    gap: 20px;
+}
+
+.sort-asc {
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+    width: max-content;
+    border: 1px solid rgba(0, 0, 0, 0.20);
+    border-radius: 10px;
+    padding: 5px 25px;
+    align-self: flex-end;
+}
+
+.catalog-list-item {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    height: 400px;
+    box-shadow: 0 0 1px rgba(0,0,0,0.3);
+}
+
+.catalog-image {
+    order: -1;
+    width: 270px;
+    height: 185px;
+}
+
+.catalog-item-title {
+    margin: 0;
+    margin-left: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.catalog-item-block {
+    margin: 0;
+    margin-left: 15px;
+}
+
+dd {
+    margin: 0;
+}
+
+.card-image {
+    color: black;
+    padding: 10px 20px;
+    background-color: #ff6633;
+}
+
+.equipment-list {
+    list-style-type: none;
+    padding: 0;
+    padding-left: 5px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.katalog-submit {
+    padding: 0;
+    height: 38px;
+}
+
+.button-image-katalog {
+    width: 28px;
+    margin-right: 5px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.promo-katalog {
+    background-image: url(./img/photo-promo-2.jpg);
+    background-repeat: no-repeat;
+    width: 1124px;
+    height: 350px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.promo-katalog__button-text {
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.promo-katalog__reservation-submit {
+    width: 220px;
+    height: 50px;
+    border: white;
+    border-radius: 15px;
+    background-color: white;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 0;
+    margin-left: 200px;
+}
+
+.promo-katalog__title {
+    font-size: 46px;
+    font-weight: bold;
+    margin: 0;
+    padding-top: 50px;
+    padding-left: 200px;
+    line-height: 1;
+}
+.promo-katalog-bold {
+    font-size: 64px;
+}
+
+.promo-katalog__text {
+    margin-left: 200px;
+}

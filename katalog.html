@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Каталог гостиницы для котов и кошек "Котейка"</title>
+</head>
+
+<body class="page">
+    <header class="main-header">
+        <nav class="main-nav">
+            <a href="./index.html" class="logo">
+                <img src="./img/logo.svg" width="63" height="52" alt="Логотип сайта гостиницы котов и кошек Котейка">
+            </a>
+            <ul class="site-navigation">
+                <li class="site-navigation-item">
+                    <a href="#" class="site-navigation-link">Почему мы?</a>
+                </li>
+                <li class="site-navigation-item">
+                    <a href="#" class="site-navigation-link">Номера</a>
+                </li>
+                <li class="site-navigation-item">
+                    <a href="#" class="site-navigation-link">Отзывы</a>
+                </li>
+                <li class="site-navigation-item">
+                    <a href="#" class="site-navigation-link">Как нас найти?</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="katalog__container">
+            <section class="filters">
+                <h2 class="filters__title">Наши номера</h2>
+                <h2 class="visually-hidden">Фильтры</h2>
+                <form action="filters-form" class="filters-form" action="#" method="get">
+                    <fieldset class="form__item">
+                        <legend class="legend-title">Цена за сутки, <span>₽</span></legend>
+                        <div class="form__container-row">
+                            <label for="filters-form-price-from" class="visually-hidden">Цена за сутки, от</label>
+                            <input type="text" class="form__input" name="filters-form-price-from"
+                                id="filters-form-price-from" placeholder="от 100" value="от 100">
+                            <label for="filters-form-price-to" class="visually-hidden">Цена за сутки, до</label>
+                            <input type="text" class="form__input" name="filters-form-price-to"
+                                id="filters-form-price-to" placeholder="до 600" value="до 600">
+                        </div>
+                    </fieldset>
+                    <fieldset class="form__item">
+                        <legend class="legend-title">Площадь</legend>
+                        <div class="form__container-column">
+                            <div class="form-block">
+                                <label for="filters-form-area-value-1">0,63 м2</label>
+                                <input class="form-area-one" type="checkbox" name="filters-form-area"
+                                    id="filters-form-area-value-1" checked value="0.63">
+                            </div>
+                            <div class="form-block">
+                                <label for="filters-form-area-value-2">0,90 м2</label>
+                                <input class="form-area-one" type="checkbox" name="filters-form-area"
+                                    id="filters-form-area-value-2" checked value="0.90">
+                            </div>
+                            <div class="form-block">
+                                <label for="filters-form-area-value-3">1,13 м2</label>
+                                <input class="form-area-one" type="checkbox" name="filters-form-area"
+                                    id="filters-form-area-value-3" checked value="1.13">
+                            </div>
+                            <div class="form-block">
+                                <label for="filters-form-area-value-4">1,56 м2</label>
+                                <input class="form-area-one" type="checkbox" name="filters-form-area"
+                                    id="filters-form-area-value-4" checked value="1.56">
+                            </div>
+                            <div class="form-block">
+                                <label for="filters-form-area-value-5">2,56 м2</label>
+                                <input class="form-area-one" type="checkbox" name="filters-form-area"
+                                    id="filters-form-area-value-5" checked value="2.56">
+                            </div>
+                            <div class="form-block">
+                                <label for="filters-form-area-value-6">2,88 м2</label>
+                                <input class="form-area-one" type="checkbox" name="filters-form-area"
+                                    id="filters-form-area-value-6" checked value="2.88">
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="form__item">
+                        <div class="form__container-column">
+                            <legend class="legend-title">Оснащение номера</legend>
+                            <div class="form-block">
+                                <label for="filters-form-equipment-value-empty">Пустой номер</label>
+                                <input class="form-area-one" type="checkbox" name="filters-form-equipment" id="filters-form-equipment-value-empty"
+                                    checked value="empty">
+                            </div>
+                            <div class="form-block">
+                                <label for="filters-form-equipment-value-sofa">Лежак</label>
+                                <input class="form-area-one" type="checkbox" name="filters-form-equipment" id="filters-form-equipment-value-sofa"
+                                    checked value="sofa">
+                            </div>
+                            <div class="form-block">
+                                <label for="filters-form-equipment-value-car-tree">Когтеточка</label>
+                                <input class="form-area-one" type="checkbox" name="filters-form-equipment"
+                                    id="filters-form-equipment-value-car-tree" checked value="car-tree">
+                            </div>
+                            <div class="form-block">
+                                <label for="filters-form-equipment-value-toy">Игровой-комплекс</label>
+                                <input class="form-area-one" type="checkbox" name="filters-form-equipment" id="filters-form-equipment-value-toy"
+                                    checked value="toy">
+                            </div>
+                            <div class="form-block">
+                                <label for="filters-form-equipment-value-house">Домик</label>
+                                <input class="form-area-one" type="checkbox" name="filters-form-equipment" id="filters-form-equipment-value-house"
+                                    checked value="house">
+                            </div>
+                    </fieldset>
+                    <button type="reset">Сбросить фильтр</button>
+                </form>
+            </section>
+            <section class="catalog">
+                <h2 class="visually-hidden">Каталог</h2>
+                <a href="#" class="sort-asc">↓ По площади ↑</a>
+                <ul class="catalog-list">
+                    <li class="catalog-list-item">
+                        <h3 class="catalog-item-title">Эконом</h3>
+                        <img src="img/photo-room-2.jpg" class="catalog-image" alt="Эконом комната">
+                        <dl class="catalog-item-block">
+                            <div class="form-block">
+                                <dt>Размеры (ШхГхВ) - </dt>
+                                <dd>90х70х180 см</dd>
+                            </div>
+                            <div class="form-block">
+                                <dt>Площадь - </dt>
+                                <dd>0,63 м<sup>2</sup></dd>
+                            </div>
+                            <div class="form-block">
+                                <dt>Оснащение номера </dt>
+                                <dd>
+                                    <ul class="equipment-list">
+                                        <li class="equipment-item equipment-item-empty"><img src="./img/empty.svg" alt="Пустой номер"></li>
+                                    </ul>
+                                </dd>
+                            </div>
+                            <div class="form-block">
+                                <dt>Цена за сутки: </dt>
+                                <dd>100 ₽</dd>
+                            </div>
+                        </dl>
+                        <button class="reservation-submit katalog-submit" type="submit"> <p class="button-text">Забронировать</p>  <img src="./img/paw-small-1.svg" class="button-image-katalog" alt="забронировать"> </button>
+                    </li>
+                    <li class="catalog-list-item">
+                        <h3 class="catalog-item-title">Эконом плюс</h3>
+                        <img src="img/photo-room-3.jpg" class="catalog-image" alt="Эконом плюс комната">
+                        <dl class="catalog-item-block">
+                            <div class="form-block">
+                                <dt>Размеры (ШхГхВ) - </dt>
+                                <dd>90х100х180 см</dd>
+                            </div>
+                            <div class="form-block">
+                                <dt>Площадь - </dt>
+                                <dd>0,90 м<sup>2</sup></dd>
+                            </div>
+                            <div class="form-block">
+                                <dt>Оснащение номера </dt>
+                            <dd>
+                                <ul class="equipment-list">
+                                    <li class="equipment-item equipment-item-sofa"><img src="./img/sofa.svg" alt="Лежак"></li>
+                                    <li class="equipment-item equipment-item-cat-tree"><img src="./img/cat-tree.svg" alt="Когтеточка"></li>
+                                </ul>
+                            </dd>
+                            </div>
+                            <div class="form-block">
+                                <dt>Цена за сутки: </dt>
+                                <dd>200 ₽</dd>
+                            </div>
+                        </dl>
+                        <button class="reservation-submit katalog-submit" type="submit"> <p class="button-text">Забронировать</p>  <img src="./img/paw-small-1.svg" class="button-image-katalog" alt="забронировать"> </button>
+                    </li>
+                    <li class="catalog-list-item">
+                        <h3 class="catalog-item-title">Комфорт</h3>
+                        <img src="img/photo-room-6.jpg" class="catalog-image" alt="Комфорт комната">
+                        <dl class="catalog-item-block">
+                            <div class="form-block">
+                                <dt>Размеры (ШхГхВ) - </dt>
+                                <dd>100х125х180 см</dd>
+                            </div>
+                            <div class="form-block">
+                                <dt>Площадь - </dt>
+                                <dd>1,13 м<sup>2</sup></dd>
+                            </div>
+                            <div class="form-block">
+                                <dt>Оснащение номера </dt>
+                                <dd>
+                                    <ul class="equipment-list">
+                                        <li class="equipment-item equipment-item-sofa"><img src="./img/sofa.svg" alt="Лежак"></li>
+                                        <li class="equipment-item equipment-item-cat-tree"><img src="./img/cat-tree.svg" alt="Когтеточка"></li>
+                                        <li class="equipment-item equipment-item-toy"><img src="./img/toy.svg" alt="Игровой-комплекс"></li>
+                                    </ul>
+                                </dd>
+                            </div>
+                            <div class="form-block">
+                                <dt>Цена за сутки: </dt>
+                                <dd>250 ₽</dd>
+                            </div>
+                        </dl>
+                        <button class="reservation-submit katalog-submit" type="submit"> <p class="button-text">Забронировать</p>  <img src="./img/paw-small-1.svg" class="button-image-katalog" alt="забронировать"> </button>
+                    </li>
+                    <li class="catalog-list-item">
+                        <h3 class="catalog-item-title">Сьют</h3>
+                        <img src="img/photo-room-4.jpg" class="catalog-image" alt="Сьют комната">
+                        <dl class="catalog-item-block">
+                            <div class="form-block">
+                                <dt>Размеры (ШхГхВ) - </dt>
+                                <dd>125х125х180 см</dd>
+                            </div>
+                            <div class="form-block">
+                                <dt>Площадь - </dt>
+                                <dd>1,56 м<sup>2</sup></dd>
+                            </div>
+                            <div class="form-block">
+                                <dt>Оснащение номера </dt>
+                                <dd>
+                                    <ul class="equipment-list">
+                                        <li class="equipment-item equipment-item-sofa"><img src="./img/sofa.svg" alt="Лежак"></li>
+                                        <li class="equipment-item equipment-item-cat-tree"><img src="./img/cat-tree.svg" alt="Когтеточка"></li>
+                                        <li class="equipment-item equipment-item-toy"><img src="./img/toy.svg" alt="Игровой-комплекс"></li>
+                                    </ul>
+                                </dd>
+                            </div>
+                            <div class="form-block">
+                                <dt>Цена за сутки: </dt>
+                                <dd>350 ₽</dd>
+                            </div>
+                        </dl>
+                        <button class="reservation-submit katalog-submit" type="submit"> <p class="button-text">Забронировать</p>  <img src="./img/paw-small-1.svg" class="button-image-katalog" alt="забронировать"> </button>
+                    </li>
+                    <li class="catalog-list-item">
+                        <h3 class="catalog-item-title">Люкс</h3>
+                        <img src="img/photo-room-1.jpg" class="catalog-image"  alt="Люкс комната">
+                        <dl class="catalog-item-block">
+                            <div class="form-block">
+                                <dt>Размеры (ШхГхВ) - </dt>
+                                <dd>160х160х180 см</dd>
+                            </div>
+                            <div class="form-block">
+                                <dt>Площадь - </dt>
+                                <dd>2,56 м<sup>2</sup></dd>
+                            </div>
+                            <div class="form-block">
+                                <dt>Оснащение номера </dt>
+                                <dd>
+                                    <ul class="equipment-list">
+                                        <li class="equipment-item equipment-item-sofa"><img src="./img/sofa.svg" alt="Лежак"></li>
+                                        <li class="equipment-item equipment-item-cat-tree"><img src="./img/cat-tree.svg" alt="Когтеточка"></li>
+                                        <li class="equipment-item equipment-item-toy"><img src="./img/toy.svg" alt="Игровой-комплекс"></li>
+                                        <li class="equipment-item equipment-item-house"><img src="./img/house.svg" alt="Домик"></li>
+                                    </ul>
+                                </dd>
+                            </div>
+                            <div class="form-block">
+                                <dt>Цена за сутки: </dt>
+                                <dd>500 ₽</dd>
+                            </div>
+                        </dl>
+                        <button class="reservation-submit katalog-submit" type="submit"> <p class="button-text">Забронировать</p>  <img src="./img/paw-small-1.svg" class="button-image-katalog" alt="забронировать"> </button>
+                    </li>
+                    <li class="catalog-list-item">
+                        <h3 class="catalog-item-title">Супер-Люкс</h3>
+                        <img src="img/photo-room-5.jpg" class="catalog-image" alt="Супер-Люкс комната">
+                        <dl class="catalog-item-block">
+                            <div class="form-block">
+                                <dt>Размеры (ШхГхВ) - </dt>
+                                <dd>180х160х180 см</dd>
+                            </div>
+                            <div class="form-block">
+                                <dt>Площадь - </dt>
+                                <dd>2,88 м<sup>2</sup></dd>
+                            </div>
+                            <div class="form-block">
+                                <dt>Оснащение номера </dt>
+                                <dd>
+                                    <ul class="equipment-list">
+                                        <li class="equipment-item equipment-item-sofa"><img src="./img/sofa.svg" alt="Лежак"></li>
+                                        <li class="equipment-item equipment-item-cat-tree"><img src="./img/cat-tree.svg" alt="Когтеточка"></li>
+                                        <li class="equipment-item equipment-item-toy"><img src="./img/toy.svg" alt="Игровой-комплекс"></li>
+                                        <li class="equipment-item equipment-item-house"><img src="./img/house.svg" alt="Домик"></li>
+                                    </ul>
+                                </dd>
+                            </div>
+                            <div class="form-block">
+                                <dt>Цена за сутки: </dt>
+                                <dd>600 ₽</dd> 
+                            </div>
+                        </dl>
+                        <button class="reservation-submit katalog-submit" type="submit"> <p class="button-text">Забронировать</p>  <img src="./img/paw-small-1.svg" class="button-image-katalog" alt="забронировать"> </button>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <section class="promo-katalog">
+            <h2 class="visually-hidden">Акции и предложения</h2>
+            <p class="promo-katalog__title">Каждый 7-й день <br><strong class="promo-katalog-bold">бесплатно!</strong></p>
+            <p class="promo-katalog__text">Акция действует при размещении <br> в номерах "Люкс" и "Супер-Люкс"</p>
+            <button class="promo-katalog__reservation-submit" type="submit"> <p class="promo-katalog__button-text">Забронировать</p>  <img src="./img/paw-small-2.svg" class="button-image" alt="Забронировать"> </button>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <section class="contacts">
+            <div class="contacts-block">
+                <h2 class="contacts-list-title">Как нас найти</h2>
+                <dl class="contacts-list">
+                    <dt class="contacts-list-term">Адрес</dt>
+                    <dd class="contacts-list-definition">Санкт-Петербург, <br> ул Большая Конюшенная, д 19</dd>
+                    <dt class="contacts-list-term">Режим работы</dt>
+                    <dd class="contacts-list-definition">Ежедневно, с 9:00 до 20:00</dd>
+                    <dt class="contacts-list-term">Телефон</dt>
+                    <dd class="contacts-list-definition"><a href="tel:88003333535">8 (800) 333-35-35</a></dd>
+                    <dt class="contacts-list-term">E-mail</dt>
+                    <dd class="contacts-list-definition"><a href="mailto:info@cat-hotel.ru">info@cat-hotel.ru</a></dd>
+                    <dt class="contacts-list-term">Социальные сети</dt>
+                    <dd class="contacts-list-definition">
+                        <ul class="social-list">
+                            <li class="social-list-item">
+                                <a href="#"> <img src="./img/facebook.svg" alt="facebook"> </a>
+                            </li>
+                            <li class="social-list-item">
+                                <a href="#"> <img src="./img/instagram.svg" alt="instagram"></a>
+                            </li>
+                            <li class="social-list-item">
+                                <a href="#"><img src="./img/vk.svg" alt="VK"></a>
+                            </li>
+                        </ul>
+                    </dd>
+                </dl>
+            </div>
+            <img src="./img/map.jpg" width="798" height="580" alt="Карта">
+        </section>
+        <section class="footer-nav">
+            <section class="footer-nav-one">
+                <h2 class="visually-hidden">Дополнительная навигация по сайту</h2>
+                <a href="./index.html"><img src="img/logo.svg" width="63" height="52" class="footer-logo"
+                        alt="Логотип сайта гостиницы котов и кошек Котейка"></a>
+                <ul class="footer-site-navigation">
+                    <li class="footer-site-navigation-item">
+                        <a href="#" class="footer-site-navigation-link">Почему мы?</a>
+                    </li>
+                    <li class="footer-site-navigation-item">
+                        <a href="#" class="footer-site-navigation-link">Номера</a>
+                    </li>
+                    <li class="footer-site-navigation-item">
+                        <a href="#" class="footer-site-navigation-link">Отзывы</a>
+                    </li>
+                    <li class="footer-site-navigation-item">
+                        <a href="#" class="footer-site-navigation-link">Как нас найти</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="footer-nav-two">
+                <p class="copyright">© 2019 Все права защищены</p>
+                <a href="#" class="politic">Политика конфиденциальности</a>
+            </section>
+        </section>
+    </footer>
+</body>
+
+</html>
